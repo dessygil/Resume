@@ -1,0 +1,184 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+    \usepackage{hyperref}
+    \usepackage{fontawesome}
+    \usepackage{helvet}
+    \renewcommand{\familydefault}{\sfdefault}
+
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+
+	\textbf{{\Huge \scshape {Desmond Gilmour}}}\\
+	\faPhone\space 519.546.9876 $|$ 
+        \faEnvelope\space\href{mailto:desmondgilmour@gmail.com}{desmondgilmour@gmail.com} $|$  
+        \faLinkedinSquare\space\href{https://www.linkedin.com/in/desmond-gilmour-886b3a128/}{@desmondgilmour} $|$
+        \faGithubSquare\space\href{https://github.com/dessygil}{@dessygil}
+        \\
+\end{center}
+
+%==== Summary ====%
+\header {Summary}
+Software developer working at the intersection of computer science and chemistry.
+
+%==== Education ====%
+\header{Education}
+\textbf{University of Guelph}\hfill Guelph, ON\\
+Bachelor of Computer Science \textit{GPA: 3.6} \hfill September 2016 - December 2021\\
+Bachelor of Chemistry  \textit{GPA: 3.6} \hfill September 2016 - December 2021\\
+\vspace{2mm}
+
+%=== Skills ===%
+\header{Skills}
+\begin{tabular}{ l l }
+	Languages:        & Python, Javascript, Typescript, Java, HTML, CSS, C, SQL, HTML                      \\
+	Frameworks/Tools: & React, Node.js, Express, Material-UI, Django, Git, Maven, Linux, PyTorch \\
+\end{tabular}
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Patsnap} \hfill WFH\\
+\textit{Sales Development Representative} \hfill December 2021 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Used cold outreach techniques to generate the highest amount of leads in Q3 (23) and the third highest revenue in Q2 (\$54,000) and Q3 (\$57,000).
+	\item Successfully onboarded three new team members, two exceeding their sales target.
+	\item Perfected communication skills through over 25,000 cold calls.
+\end{itemize}
+
+\textbf{University of Guelph} \hfill Guelph, ON\\
+\textit{NSERC Funded Research Assistant} \hfill May 2019 - September 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Synthesized a protected disaccharide acceptor (Lewis Y) ready for glycosylation.
+	\item Characterized all compounds using 1D NMR, 2D NMR, Mass Spectrometry, and IR Spectroscopy.
+	\item Presented synthetic scheme at CEPS undergraduate poster session of approximately 30 students.
+\end{itemize}
+
+\textit{Teaching Assistant} \hfill January 2019 - September 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Taught first-year chemistry W20 and only undergraduate to teach second-year orgo S20. 
+	\item Managed the education of 60+ students per semester in person and through zoom lessons.
+        \item Taught students ChemDraw to communicate remotely and Gaussian to teach organic chemistry concepts throughout the lockdown.
+	\item Received a TA rating of 4.8/5.0.
+\end{itemize}
+
+\textit{Residence Assistant} \hfill September 2018 - April 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Ensured the safety of 300+ Students.
+	\item De-escalated dangerous situations and navigated disagreements between students.
+        \item Helped build an inclusive environment for all first-year students in South residence.
+\end{itemize}
+
+%==== Projects ====%
+
+\header{Projects}
+{\textbf{Vintage Academy}} {\sl HTML, CSS, Shopify} \\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Co-built a brand using Shopify that grossed approximately      \$2000/month.
+	\item Manipulated frontend using UI/UX principles to streamline the buying process.\\
+\end{itemize}
+\vspace*{1mm}
+
+{\textbf{Bioactivity Prediction App for the target Protein-arginine deiminase type-4 (PADI4)}} {\sl Numpy, Pandas, RDKit, StreamLit, Lazy Predict, SKLearn} \\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Produced an app predicts the bioactivity of molecules inputted in SMILES format for the target PADI4.
+	\item Model was trained using PubChem molecular fingerprints for data obtained from ChEMBL Database
+\end{itemize}
+\vspace*{1mm}
+
+{\textbf{House Party}} {\sl Django, React, HTML, CSS} \\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Built a room-sharing website for multiple users to share what music they are currently listening to.
+	\item Integrated the Spotify API and Axios to fetch API endpoints
+        \item Utilized Material-UI for better user experience.\\
+\end{itemize}
+\vspace*{1mm}
+
+{\textbf{AlphaToe}} {\sl C}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Developed an unbeatable tic tac toe game that used a pseudo artificial intelligence and ran in the terminal.
+	\item A hashmap is used for possible moves, and each position is ranked to know which move to make next.\\
+\end{itemize}
+\vspace*{1mm}
+
+\end{document}
